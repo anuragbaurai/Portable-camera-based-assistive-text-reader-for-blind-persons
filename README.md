@@ -1,29 +1,86 @@
-# Portable-camera-based-assistive-text-reader-for-blind-persons
-In all, there are almost 285 million visually impaired people. About 70% among these people come from low income background. This project aims at achieving a proper portability of the entire system in a cost-effective way. A camera based text reading framework to help blind people to read texts from natural scenes from their daily lives is modelled.It deals with recognizing the surrounding objects and to interpret them accurately and giving the output in the form of speech. This paper mainly focuses on implementation of the above idea, gives approach on the challenges that we came across. It is a combination of many technologies integrated together in a marvelous way in one device to achieve the sense that was lost. Due to recent development in the image processing, speech processing, embedded system, it is possible to create an economical product to help blind people to interact efficiently with the society. As text is the important source of all information’s and decision-making skills are dependent on them, it is feasible to make it happen with this device. It is compact and small and the concept of braille notes is not that easily available and hence, it has proved very useful in real time. This device makes the senses more accurate and lead their lives easily.The whole system is made portable with Raspberry pi and output is taken from the audio jack of raspberry pi using Python and OpenCV as a platform.
+# CRNN_Tensorflow
+Use tensorflow to implement a Deep Neural Network for scene text recognition mainly based on the paper "An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition".
 
-Basically, the whole project is divided into three parts,
-text reading only OCR
-TEXT READING USING CONVOLUTIONAL RECURRENT NEURAL NETWORK
-TEXT READING USING COMBINATION OF OCR + CRNN
+You can refer to their paper for details http://arxiv.org/abs/1507.05717. Thanks for the author [Baoguang Shi](https://github.com/bgshih).  
+This model consists of a CNN stage, RNN stage and CTC loss for scene text recognition task.
 
-OCR fails when,
-Font is not Arial, Times new roman ,etc 
-Italics
-Noise in the Image
-Lightning occurs                
+## Installation
+This software has only been tested on ubuntu 16.04(x64), python3.5, cuda-8.0, cudnn-6.0 with a GTX-1070 GPU. To install this software you need tensorflow 1.3.0 and other version of tensorflow has not been tested but I think it will be able to work properly in tensorflow above version 1.0. Other required package you may install them by
 
+```
+pip3 install -r requirements.txt
+```
 
-Using CRNN TensorFlow
-End to end trainable approach.
-Components are separately trained and tuned.
-No character segmentation or horizontal scale normalization are  involved.
-Datasets involved.
-Dataset used- Synth 90k [7]
-Dataset is converted into TensorFlow records.
+## Test model
+In this repo I uploaded a model trained on a subset of the [Synth 90k](http://www.robots.ox.ac.uk/~vgg/data/text/).
+
+ During data preparation process the dataset is converted into a tensorflow records which you can find in the data folder.
 
 
-Contour sorting after extraction is the biggest problem in neural network.
-Because of the variation in size of the contours of different words the extraction of text is done from any random contour and we get the speech output of random words from a single sentence.
-For.eg  If the sentence is He is playing cricket it would read as  Is he cricket playing.
-To overcome this disadvantage of CRNN we combine the both techniques of OCR and CRNN.
+You can test the trained model on the converted dataset by
 
+```
+python tools/test_shadownet.py --dataset_dir data/ --weights_path model/shadownet/shadownet_2017-09-29-19-16-33.ckpt-39999
+```
+`Expected output is`  
+![Test output]
+
+(https://github.com/TJCVRS/CRNN_Tensorflow/blob/master/data/images/test_output.png)
+
+
+If you want to test a single image you can do it by
+```
+python tools/demo_shadownet.py --image_path tools/test_01.jpg --weights_path model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999```
+`Example image_01 is`  
+![Example image1]
+
+(https://github.com/TJCVRS/CRNN_Tensorflow/blob/master/data/images/text_example_image1.png)  
+`Expected output_01 is`  
+![Example image1 output](https://github.com/TJCVRS/CRNN_Tensorflow/blob/master/data/images/test_example_image1_output.png)  
+`Example image_02 is`  
+![Example image2](https://github.com/TJCVRS/CRNN_Tensorflow/blob/master/data/images/test_example_image2.png)  
+`Expected output_02 is`  
+![Example image2 output](https://github.com/TJCVRS/CRNN_Tensorflow/blob/master/data/images/test_example_image2_output.png)  
+
+
+
+## Train your own model
+#### Data Preparation
+Firstly you need to store all your image data in a root folder then you need to supply a txt file named sample.txt to specify the relative path to the image data dir and it's corresponding text label. For example
+
+```
+path/1/2/373_coley_14845.jpg coley
+path/17/5/176_Nevadans_51437.jpg nevadans
+```
+
+Secondly you are supposed to convert your dataset into tensorflow records which can be done by
+```
+python tools/write_text_features --dataset_dir path/to/your/dataset --save_dir path/to/tfrecords_dir
+```
+All your training image will be scaled into (32, 100, 3) the dataset will be divided into train, test, validation set and you can change the parameter to control the ratio of them.
+
+#### Train model
+The whole training epoches are 40000 in my experiment. I trained the model with a batch size 32, initialized learning rate is 0.1 and decrease by multiply 0.1 every 10000 epochs. For more training parameters information you can check the global_configuration/config.py for details. To train your own model by
+
+```
+python tools/train_shadownet.py --dataset_dir path/to/your/tfrecords
+```
+You can also continue the training process from the snapshot by
+```
+python tools/train_shadownet.py --dataset_dir path/to/your/tfrecords --weights_path path/to/your/last/checkpoint
+```
+After several times of iteration you can check the log file in logs folder you are supposed to see the following contenent
+![Training log](https://github.com/TJCVRS/CRNN_Tensorflow/blob/master/data/images/train_log.png)
+The seq distance is computed by calculating the distance between two saparse tensor so the lower the accuracy value is the better the model performs.The train accuracy is computed by calculating the character-wise precision between the prediction and the ground truth so the higher the better the model performs.
+
+During my experiment the `loss` drops as follows  
+![Training loss](https://github.com/TJCVRS/CRNN_Tensorflow/blob/master/data/images/train_loss.png)
+The `distance` between the ground truth and the prediction drops as follows  
+![Sequence distance](https://github.com/TJCVRS/CRNN_Tensorflow/blob/master/data/images/seq_distance.png)
+
+## Experiment
+The accuracy during training process rises as follows  
+![Training accuracy](https://github.com/TJCVRS/CRNN_Tensorflow/blob/master/data/images/training_accuracy.md)
+
+## TODO
+The model is trained on a subet of [Synth 90k](http://www.robots.ox.ac.uk/~vgg/data/text/). So i will train a new model on the whold dataset to get a more robust model.The crnn model needs large of training data to get a rubust model.

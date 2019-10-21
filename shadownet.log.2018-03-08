@@ -1,0 +1,101 @@
+INFO: 03-07 13:24:06: tf_logging.py:82 * 448 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-07 13:24:08: demo_shadownet.py:82 * 448 Predict image pic1.jpg label worldd
+INFO: 03-07 13:24:51: tf_logging.py:82 * 9012 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-07 13:24:52: demo_shadownet.py:82 * 9012 Predict image pic1.jpg label worldd
+INFO: 03-07 13:25:16: tf_logging.py:82 * 10336 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-07 13:25:16: demo_shadownet.py:82 * 10336 Predict image pic0.jpg label personalites
+INFO: 03-07 13:25:39: tf_logging.py:82 * 4696 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-07 13:25:40: demo_shadownet.py:82 * 4696 Predict image pic2.jpg label crupaws
+INFO: 03-07 13:37:46: tf_logging.py:82 * 8784 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-07 13:37:47: demo_shadownet.py:86 * 8784 Predict image pic2.jpg label crupaws
+INFO: 03-07 15:45:27: tf_logging.py:82 * 896 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-07 15:45:27: demo_shadownet.py:84 * 896 Predict image pic1.jpg label cocnsuapran
+INFO: 03-07 16:10:21: tf_logging.py:82 * 1708 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-07 16:10:22: demo_shadownet.py:84 * 1708 Predict image pic0.jpg label enethocemen
+INFO: 03-08 11:13:18: tf_logging.py:82 * 5032 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:13:20: demo_shadownet.py:84 * 5032 Predict image 12.jpg label suteess
+INFO: 03-08 11:22:16: tf_logging.py:82 * 2044 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:22:16: demo_shadownet.py:84 * 2044 Predict image 12.jpg label suteess
+INFO: 03-08 11:29:10: tf_logging.py:82 * 2076 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:29:11: demo_shadownet.py:84 * 2076 Predict image pic1.jpg label siifpoligss
+INFO: 03-08 11:32:07: tf_logging.py:82 * 7044 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:32:08: demo_shadownet.py:84 * 7044 Predict image pic1.jpg label siifpoligss
+INFO: 03-08 11:34:17: tf_logging.py:82 * 4636 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:34:18: demo_shadownet.py:84 * 4636 Predict image pic1.jpg label tum
+INFO: 03-08 11:34:55: tf_logging.py:82 * 7532 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:34:56: demo_shadownet.py:84 * 7532 Predict image 12.jpg label suteess
+INFO: 03-08 11:35:32: tf_logging.py:82 * 1896 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:35:32: demo_shadownet.py:84 * 1896 Predict image pic1.jpg label ninn
+INFO: 03-08 11:43:08: tf_logging.py:82 * 4856 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:43:08: tf_logging.py:82 * 8972 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:43:09: demo_shadownet.py:84 * 4856 Predict image 12.jpg label futuke
+INFO: 03-08 11:43:09: demo_shadownet.py:84 * 8972 Predict image 12.jpg label futuke
+INFO: 03-08 11:47:13: tf_logging.py:82 * 5372 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:47:14: demo_shadownet.py:84 * 5372 Predict image 12.jpg label futuke
+INFO: 03-08 11:51:19: tf_logging.py:82 * 8664 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:51:20: demo_shadownet.py:84 * 8664 Predict image pic0.jpg label fieisteus
+INFO: 03-08 11:51:30: tf_logging.py:82 * 8688 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:51:31: demo_shadownet.py:84 * 8688 Predict image pic1.jpg label suecs
+INFO: 03-08 11:51:41: tf_logging.py:82 * 7080 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:51:41: demo_shadownet.py:84 * 7080 Predict image pic2.jpg label siliseoes
+INFO: 03-08 11:51:51: tf_logging.py:82 * 8476 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:51:52: demo_shadownet.py:84 * 8476 Predict image pic3.jpg label fuuhe
+INFO: 03-08 11:52:01: tf_logging.py:82 * 7976 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:52:02: demo_shadownet.py:84 * 7976 Predict image pic4.jpg label sis
+INFO: 03-08 11:53:27: tf_logging.py:82 * 7548 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 11:53:27: demo_shadownet.py:84 * 7548 Predict image pic0.jpg label fieisteus
+INFO: 03-08 13:05:29: tf_logging.py:82 * 3244 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 13:05:29: demo_shadownet.py:84 * 3244 Predict image 12.jpg label futuke
+INFO: 03-08 13:08:31: tf_logging.py:82 * 7344 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 13:08:32: demo_shadownet.py:84 * 7344 Predict image pic0.jpg label siflngess
+INFO: 03-08 13:08:44: tf_logging.py:82 * 9144 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 13:08:45: demo_shadownet.py:84 * 9144 Predict image pic1.jpg label suecs
+INFO: 03-08 13:08:55: tf_logging.py:82 * 7740 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 13:08:55: demo_shadownet.py:84 * 7740 Predict image pic2.jpg label siliseoes
+INFO: 03-08 13:09:06: tf_logging.py:82 * 4220 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 13:09:07: demo_shadownet.py:84 * 4220 Predict image pic3.jpg label fuuhe
+INFO: 03-08 13:09:17: tf_logging.py:82 * 8672 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 13:09:18: demo_shadownet.py:84 * 8672 Predict image pic4.jpg label sis
+INFO: 03-08 13:09:29: tf_logging.py:82 * 5008 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 13:09:29: demo_shadownet.py:84 * 5008 Predict image pic5.jpg label iuun
+INFO: 03-08 13:11:42: tf_logging.py:82 * 6408 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 13:11:43: demo_shadownet.py:84 * 6408 Predict image pic4.jpg label sis
+INFO: 03-08 13:22:13: tf_logging.py:82 * 9160 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 13:22:14: demo_shadownet.py:84 * 9160 Predict image pic0.jpg label engineerines
+INFO: 03-08 13:22:46: tf_logging.py:82 * 4716 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 13:22:47: demo_shadownet.py:84 * 4716 Predict image pic1.jpg label icrowave
+INFO: 03-08 13:24:25: tf_logging.py:82 * 6416 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 13:24:26: demo_shadownet.py:84 * 6416 Predict image pic0.jpg label fushmnns
+INFO: 03-08 19:27:29: tf_logging.py:82 * 8040 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:27:30: demo_shadownet.py:84 * 8040 Predict image 30.jpg label statoks
+INFO: 03-08 19:37:20: tf_logging.py:82 * 5372 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:38:18: tf_logging.py:82 * 6028 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:38:19: demo_shadownet.py:88 * 6028 Predict image 30.jpg label(speak.Speak(statoks))
+INFO: 03-08 19:40:23: tf_logging.py:82 * 7616 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:40:24: demo_shadownet.py:88 * 7616 Predict image 30.jpg label statoks
+INFO: 03-08 19:41:24: tf_logging.py:82 * 7324 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:41:25: demo_shadownet.py:88 * 7324 Predict image 30.jpg label statoks
+INFO: 03-08 19:45:29: tf_logging.py:82 * 848 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:45:30: demo_shadownet.py:88 * 848 Predict image pic0.jpg label sieaes
+INFO: 03-08 19:45:44: tf_logging.py:82 * 9168 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:45:45: demo_shadownet.py:88 * 9168 Predict image pic1.jpg label us
+INFO: 03-08 19:45:57: tf_logging.py:82 * 9128 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:45:58: demo_shadownet.py:88 * 9128 Predict image pic2.jpg label es
+INFO: 03-08 19:46:09: tf_logging.py:82 * 3460 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:46:10: demo_shadownet.py:88 * 3460 Predict image pic3.jpg label eina
+INFO: 03-08 19:46:24: tf_logging.py:82 * 4820 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:46:24: demo_shadownet.py:88 * 4820 Predict image pic4.jpg label lates
+INFO: 03-08 19:46:36: tf_logging.py:82 * 4368 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:46:37: demo_shadownet.py:88 * 4368 Predict image pic5.jpg label fttaomnet
+INFO: 03-08 19:50:12: tf_logging.py:82 * 4016 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:50:12: demo_shadownet.py:88 * 4016 Predict image pic0.jpg label sesses
+INFO: 03-08 19:50:24: tf_logging.py:82 * 2784 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:50:25: demo_shadownet.py:88 * 2784 Predict image pic1.jpg label etmurteutune
+INFO: 03-08 19:50:38: tf_logging.py:82 * 1464 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:50:38: demo_shadownet.py:88 * 1464 Predict image pic2.jpg label syyng
+INFO: 03-08 19:50:50: tf_logging.py:82 * 6480 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:50:51: demo_shadownet.py:88 * 6480 Predict image pic3.jpg label suytais
+INFO: 03-08 19:51:02: tf_logging.py:82 * 8780 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:51:02: demo_shadownet.py:88 * 8780 Predict image pic4.jpg label erags
+INFO: 03-08 19:51:14: tf_logging.py:82 * 7052 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 03-08 19:51:14: demo_shadownet.py:88 * 7052 Predict image pic5.jpg label eyys

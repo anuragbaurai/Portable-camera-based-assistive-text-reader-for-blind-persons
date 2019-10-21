@@ -1,0 +1,2 @@
+INFO: 04-21 12:52:11: tf_logging.py:82 * 10872 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 04-21 12:52:13: demo_shadownet.py:84 * 10872 Predict image 1.png label warrior

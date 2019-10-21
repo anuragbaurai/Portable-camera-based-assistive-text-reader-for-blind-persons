@@ -1,0 +1,6 @@
+INFO: 04-03 23:26:06: tf_logging.py:82 * 224 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 04-03 23:26:08: demo_shadownet.py:88 * 224 Predict image obj.jpg label suaterirn
+INFO: 04-03 23:38:16: tf_logging.py:82 * 2536 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 04-03 23:38:16: demo_shadownet.py:88 * 2536 Predict image gray.jpg label toeene
+INFO: 04-03 23:40:15: tf_logging.py:82 * 2980 Restoring parameters from model/shadownet/shadownet_2017-10-17-11-47-46.ckpt-199999
+INFO: 04-03 23:40:15: demo_shadownet.py:88 * 2980 Predict image capture.jpg label mbees
